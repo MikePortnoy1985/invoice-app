@@ -1,7 +1,5 @@
 import { FC } from 'react';
 
-import './styles.css';
-
-const App: FC = () => <div className="App">Hello from React</div>;
+const App: FC = () => <div className="font-spartan">Hello from React</div>;
 
 export default App;

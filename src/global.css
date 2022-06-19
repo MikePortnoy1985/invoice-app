@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 500;
+  src: local('League Spartan'), url(./assets/fonts/LeagueSpartan-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    ont-weight: 700;
+    src: local('League Spartan'), url(./assets/fonts/LeagueSpartan-Medium.ttf) format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
