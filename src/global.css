@@ -12,7 +12,7 @@
 @font-face {
     font-family: 'League Spartan';
     font-style: normal;
-    ont-weight: 700;
+    font-weight: 700;
     src: local('League Spartan'), url(./assets/fonts/LeagueSpartan-Medium.ttf) format('truetype');
 }
 
@@ -20,6 +20,37 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  cursor: url('./assets/pointer/pointer.png'), default;
 }
 
+@layer base {
+  h1 {
+    @apply font-spartan font-bold text-2xl;
+  }
 
+  h2 {
+    @apply font-spartan font-bold text-xl;
+  }
+
+  h3 {
+    @apply font-spartan font-bold text-l;
+  }
+}
+
+@layer components {
+  .app {
+    @apply text-main-dark dark:text-main-light bg-main-light dark:bg-main-dark;
+  }
+
+  .text-base-bold {
+    @apply font-spartan font-bold text-base;
+  }
+
+  .text-base-medium {
+    @apply font-spartan font-medium text-base;
+  }
+
+  .text-sm-custom {
+    @apply font-spartan font-medium text-sm;
+  }
+}
