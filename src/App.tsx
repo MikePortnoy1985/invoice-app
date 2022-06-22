@@ -1,13 +1,27 @@
 import { FC } from 'react';
+import { useRoutes } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import InvoiceList from './pages/InvoicesList';
+import InvoiceOverview from './pages/InvoiceOverview';
 
-const App: FC = () => (
-  <div className="app">
-    <h1>Test</h1>
-    <h2>Test</h2>
-    <h3>Test</h3>
-    <h3 className="text-base-bold">text-base-bold</h3>
-    <div className="text-base-medium">text-base-medium</div>
-    <div className="text-sm-custom">text-sm-custom</div>
-  </div>
-);
+const App: FC = () => {
+  const routes = useRoutes([
+    {
+      path: '/',
+      element: <InvoiceList />,
+    },
+    {
+      path: ':id',
+      element: <InvoiceOverview />,
+    },
+  ]);
+
+  return (
+    <div className="h-screen bg-main-light dark:bg-main-dark relative">
+      <Sidebar />
+      {routes}
+    </div>
+  );
+};
+
 export default App;

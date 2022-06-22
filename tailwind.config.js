@@ -8,6 +8,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      white: '#FFF',
       'main-light': '#F8F8FB',
       'main-dark': '#0C0E16',
       'custom-purple': '#7C5DFA',
@@ -16,6 +17,7 @@ module.exports = {
       'custom-pink': '#FF9797',
       'custom-dark-1': '#141624',
       'custom-dark-2': '#1E2139',
+      'custom-dark-3': '#373B53',
       'custom-dark-gray': '#252945',
       'custom-lavender': '#DFE3FA',
       'custom-gray': '#888EB0',
