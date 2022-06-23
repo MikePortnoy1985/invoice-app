@@ -17,7 +17,7 @@ const App: FC = () => {
   ]);
 
   return (
-    <div className="h-screen bg-main-light dark:bg-main-dark relative">
+    <div className="h-screen text-main-dark dark:text-main-light bg-main-light dark:bg-main-dark transition-colors duration-700 relative pt-18 flex">
       <Sidebar />
       {routes}
     </div>

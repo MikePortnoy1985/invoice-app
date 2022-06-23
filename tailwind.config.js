@@ -18,6 +18,7 @@ module.exports = {
       'custom-dark-1': '#141624',
       'custom-dark-2': '#1E2139',
       'custom-dark-3': '#373B53',
+      'custom-dark-4': '#494E6E',
       'custom-dark-gray': '#252945',
       'custom-lavender': '#DFE3FA',
       'custom-gray': '#888EB0',
@@ -60,7 +61,23 @@ module.exports = {
         },
       ],
     },
-    extend: {},
+    extend: {
+      screens: {
+        xs: '375px',
+      },
+      spacing: {
+        18: '4.5rem',
+      },
+      padding: {
+        'pt-18': '4.5rem',
+      },
+      width: {
+        'w-18': '4.5rem',
+      },
+      height: {
+        'h-18': '4.5rem',
+      },
+    },
   },
   plugins: [],
 };
