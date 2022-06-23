@@ -38,10 +38,6 @@
 }
 
 @layer components {
-  .app {
-    @apply text-main-dark dark:text-main-light bg-main-light dark:bg-main-dark;
-  }
-
   .text-base-bold {
     @apply font-spartan font-bold text-base;
   }
