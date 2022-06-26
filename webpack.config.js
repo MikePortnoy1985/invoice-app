@@ -113,6 +113,10 @@ module.exports = {
     client: {
       progress: true,
       reconnect: 3,
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
     },
     historyApiFallback: {
       disableDotRule: true,

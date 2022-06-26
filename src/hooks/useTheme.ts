@@ -10,8 +10,8 @@ const useTheme = () => {
   );
 
   const switchTheme = () => {
-    const newTheme = theme === Theme.Light ? Theme.Dark : Theme.Light;
     document.documentElement.classList.toggle(theme);
+    const newTheme = theme === Theme.Light ? Theme.Dark : Theme.Light;
     setTheme(newTheme);
   };
 

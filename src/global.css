@@ -49,4 +49,7 @@
   .text-sm-custom {
     @apply font-spartan font-medium text-sm;
   }
+  .theme-styles {
+    @apply bg-custom-dark-3 dark:bg-custom-dark-2 transition-colors duration-700
+  }
 }
