@@ -64,6 +64,8 @@ module.exports = {
     extend: {
       screens: {
         xs: '375px',
+        md: '768px',
+        xl: '1440px',
       },
       spacing: {
         18: '4.5rem',
@@ -79,5 +81,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+    },
+  ],
 };
