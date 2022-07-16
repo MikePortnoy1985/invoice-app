@@ -19,10 +19,12 @@ module.exports = {
       'custom-dark-2': '#1E2139',
       'custom-dark-3': '#373B53',
       'custom-dark-4': '#494E6E',
+      'custom-dark-5': '#0C0E16',
       'custom-dark-gray': '#252945',
       'custom-lavender': '#DFE3FA',
       'custom-gray': '#888EB0',
       'custom-light-purple': '#7E88C3',
+      'custom-light-1': '#F9FAFE',
     },
     fontSize: {
       '2xl': [
