@@ -41,5 +41,11 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error'],
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
+    'react/jsx-props-no-spreading': [
+      0,
+      {
+        html: 'ignore',
+      },
+    ],
   },
 };
